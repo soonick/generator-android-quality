@@ -1,5 +1,7 @@
 # generator-android-quality
 
+[![Build Status](https://travis-ci.org/soonick/generator-android-quality.svg)](https://travis-ci.org/soonick/generator-android-quality)
+
 > [Yeoman](http://yeoman.io) generator
 
 ## Getting Started
