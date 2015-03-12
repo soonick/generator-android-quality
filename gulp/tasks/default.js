@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['eslint']);
+gulp.task('default', ['eslint', 'mocha']);
