@@ -1,11 +1,5 @@
 apply plugin: 'com.android.application'
 
-sourceSets {
-  main {
-    java.srcDir file('src/main/java/src')
-  }
-}
-
 buildscript {
   repositories {
     mavenCentral()
