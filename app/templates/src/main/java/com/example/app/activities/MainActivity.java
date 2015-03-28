@@ -1,12 +1,13 @@
-package com.example.app;
+package com.example.app.activities;
 
+import com.example.app.R;
 import android.app.Activity;
 import android.os.Bundle;
 
 /**
  * Main activity.
  */
-public class Main extends Activity {
+public class MainActivity extends Activity {
     /**
      * Initialize view.
      * @param savedInstanceState - You know ;)

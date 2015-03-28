@@ -27,7 +27,7 @@ module.exports = yeoman.generators.Base.extend({
       var files = [
         'src/main/res/values/strings.xml',
         'src/main/res/layout/main.xml',
-        'src/main/java/com/example/app/Main.java',
+        'src/main/java/com/example/app/activities/MainActivity.java',
         ['editorconfig', '.editorconfig']
       ];
       fileUtils.copyFiles(this, files);
