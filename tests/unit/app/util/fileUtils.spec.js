@@ -34,3 +34,39 @@ describe('copyFiles', function() {
     );
   });
 });
+
+describe('copyTemplates', function() {
+  beforeEach(function() {
+    this.generator = {
+      fs: {
+        copyTpl: sinon.spy()
+      },
+      templatePath: function(path) {
+        return 'temp/' + path;
+      },
+      destinationPath: function(path) {
+        return 'dest/' + path;
+      }
+    };
+  });
+
+  it('calls fs.copyTpl with correct paths', function() {
+    var files = [
+      'file',
+      ['original', 'new']
+    ];
+    var context = {
+      key: 'val'
+    };
+    fileUtils.copyTemplates(this.generator, files, context);
+
+    assert.deepEqual(
+      this.generator.fs.copyTpl.args[0],
+      ['temp/file', 'dest/file', context]
+    );
+    assert.deepEqual(
+      this.generator.fs.copyTpl.args[1],
+      ['temp/original', 'dest/new', context]
+    );
+  });
+});

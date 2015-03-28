@@ -17,6 +17,13 @@ buildscript {
 }
 
 android {
-  compileSdkVersion 21
-  buildToolsVersion "21.1.2"
+  compileSdkVersion 22
+  buildToolsVersion "22.0"
 }
+<% if (googlePlus) { %>
+// --------------- Google + Sign in --------------
+
+dependencies {
+  compile 'com.google.android.gms:play-services:6.5.87'
+}
+<% } %>
