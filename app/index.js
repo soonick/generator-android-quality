@@ -28,6 +28,8 @@ module.exports = yeoman.generators.Base.extend({
         'src/main/res/values/strings.xml',
         'src/main/res/layout/main.xml',
         'src/main/java/com/example/app/activities/MainActivity.java',
+        'src/test/java/com/example/app/activities/MainActivityTest.java',
+        'src/androidTest/java/com/example/app/activities/MainActivityEspressoTest.java',
         ['editorconfig', '.editorconfig']
       ];
       fileUtils.copyFiles(this, files);
